@@ -5,6 +5,11 @@ VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "20240401", "20240401\20240401.vcxproj", "{6C5BA3C5-287D-425F-9C7E-BE67311070FC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "20240402", "20240402", "{F4ECB6C5-D8D6-4889-8306-555FC09DACC5}"
+	ProjectSection(SolutionItems) = preProject
+		aa.c = aa.c
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
