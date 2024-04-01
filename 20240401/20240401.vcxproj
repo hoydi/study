@@ -136,6 +136,8 @@
     <ClCompile Include="BitRightShift.c" />
     <ClCompile Include="BitXorOperation.c" />
     <ClCompile Include="CircleArea.c" />
+    <ClCompile Include="ConvDiv.c" />
+    <ClCompile Include="FieldWidth.c" />
     <ClCompile Include="FloatError.c" />
     <ClCompile Include="HowChar.c" />
     <ClCompile Include="Notation.c" />
