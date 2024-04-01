@@ -127,16 +127,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ASCIItest3.c" />
+    <ClCompile Include="AutoConvOne.c" />
     <ClCompile Include="BitAndOperation.c" />
     <ClCompile Include="BitLeftShift.c" />
     <ClCompile Include="BitNotOperation.c" />
     <ClCompile Include="BitOrOperation.c" />
     <ClCompile Include="BitRightShift.c" />
     <ClCompile Include="BitXorOperation.c" />
+    <ClCompile Include="CircleArea.c" />
     <ClCompile Include="FloatError.c" />
+    <ClCompile Include="HowChar.c" />
     <ClCompile Include="Notation.c" />
+    <ClCompile Include="SizeOfOperator.c" />
     <ClCompile Include="test1.c" />
     <ClCompile Include="test2.c" />
+    <ClCompile Include="test4.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
