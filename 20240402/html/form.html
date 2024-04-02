@@ -6,6 +6,43 @@
     <title>폼태그알아보기</title>
 </head>
 <body>
-    
+    <h1>Form 알아보기</h1>
+    <form>
+        hidden:<input type="hidden"><br>
+        text:<input type="text" /><br>
+        password:<input type="password"><br>
+        email:<input type="email"><br>
+        button:<input type="button" value="닫기">
+        <button type="button">닫기</button><br>
+        date : <input type="date">
+        year : <input type="month"><br>
+        color : <input type="color"><br>
+        checkbox : 
+        <label><input type="checkbox">독서</label>
+        <!--라벨로 감싸면 체크박스외에 텍스트를 클릭해도 선택됨-->
+        <input type="checkbox">독서
+        <input type="checkbox">독서
+        <input type="checkbox">독서
+        <br>
+        radio:
+        <input type="radio"name="sex">남자
+        <input type="radio" name="sex">여자
+        <br>
+        range:<input type="range" min="0" max="10"><br>
+        <select>
+            <option value="0">선택해주세요</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+        <br>
+        <textarea cols="80" rows="10">
+            내용에 대한 긴 문장을 표시할 때 사용합니다.
+        </textarea>
+        <br>
+        <input type="reset" value="취소" />
+        <input type="submit" value="전송" /><!--잘안씀-->
+    </form>
 </body>
 </html>
