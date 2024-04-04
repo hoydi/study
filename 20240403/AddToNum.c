@@ -1,0 +1,18 @@
+//#include <stdio.h>
+//
+//int main(void)
+//{
+//	int total = 0;
+//	int i, num;
+//	printf("0∫Œ≈Õ num±Ó¡ˆ¿« µ°º¿, num¿∫?");
+//	scanf("%d", &num);
+//
+//	for (i = 0; i < num + 1; i++)
+//	{
+//		printf("%d+%d", total, i);
+//		total += i;
+//		printf("=%d\n", total);
+//	}
+//	printf("0∫Œ≈Õ %d±Ó¡ˆ µ°º¿∞·∞˙: %d \n",num, total);
+//	return 0;
+//}
