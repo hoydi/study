@@ -63,3 +63,38 @@
     text-decoration: none;
     border-radius: 50%;
 }
+
+a{
+    text-decoration: none;
+    color:#333333;
+}
+a:hover{
+    text-decoration: underline overline;
+    color:green;
+}
+
+h1{
+    color:red;
+    text-shadow: 3px 2px 2px black;
+}
+
+.cap{
+    font-size: 3em;
+    text-transform: capitalize;
+    letter-spacing: 0.2em;
+    word-spacing: 1em;
+    line-height: 2.6;
+    text-indent: 3em;
+}
+.upp{
+    font-size: 3em;
+    text-transform: uppercase;
+}
+.low{
+    font-size: 3em;
+    text-transform: lowercase;
+}
+.fw{
+    font-size: 3em;
+    text-transform:full-width;
+}
