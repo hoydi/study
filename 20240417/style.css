@@ -1,0 +1,282 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    color: #333;
+    font-family: 'S-CoreDream-3Light';
+}
+html,body,h1,p,ul,li{
+    padding:0;
+    margin:0;
+    word-break: keep-all;
+}
+
+div,header,footer,section,article,main,nav,li,aside{
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+.w1400{
+    width: 1400px;
+    margin: auto;
+}
+.flex{
+    display: flex;
+}
+.phone{
+    animation: aniphone 4s infinite;
+    width: 20px;
+}
+@keyframes aniphone{
+    0%{transform:translateX(-1px);}
+    2.5%{transform:translateX(5px);}
+    5%{transform:translateX(-1px);}
+    7.5%{transform:translateX(5px);}
+    10%{transform:translateX(-1px);}
+    15%{transform:translateX(5px);}
+    20%{transform:translateX(0px);}
+    100%{}
+}
+header{
+    background-color: rgb(255, 255, 255);
+    min-height: 100px;
+
+}
+
+header > div {
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+nav span{
+    background: rgb(130,87,226);
+    background: linear-gradient(90deg, rgba(130,87,226,1) 0%, rgba(67,114,223,1) 100%);
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: white;
+
+}
+
+.headBanner{
+    
+    background: black url(./images/headerBg.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 300px;
+    padding-top: 50px;
+
+
+}
+.headBanner >div{
+    color: white;
+    
+}
+
+.headBanner > div.textBox{
+    
+    width:50%;
+    padding: 1px 5px;
+    margin: 30px auto;
+    font-size: 30px;
+}
+
+.headBanner >div > ul >li{
+    color: white;
+    border: 1px solid white;
+    padding: 5px 20px;
+    margin: 10px;
+}
+
+.headBanner li:hover{
+    background-color: white;
+    color: black;
+}
+
+.curi{
+    background-color: white;
+    min-height: 300px;
+
+}
+
+.table td{
+    border-bottom: 1px solid black;
+    padding: 5px 10px;
+    text-indent: -10px;
+}
+.table td:nth-child(2n-1){
+    background-color: red;
+}
+
+
+.kDigital{
+    background-color: #004F9F;
+    min-height: 200px;
+    padding: 50px 100px;
+    width: 100%;
+
+}
+.kDigital p,.kDigital h5,.kDigital span{
+    color: white;
+    
+}
+.kDigital .flex div
+{
+    margin: 0 auto;
+    flex-grow:1;
+    width: 50%;
+}
+.kDigital .flex > div:last-child
+{
+padding-right: 200px;
+}
+
+.no1{
+    background-color: white;
+    min-height: 200px;
+
+}
+.no1 .boxList{
+    width: 1100px;
+    margin:auto;
+    flex-wrap: wrap;
+}
+.no1 .boxList li{
+    width:50%;
+}
+.greenabsolute .greenbox{
+    position: absolute; left:95%; top:50%; font-size:0.8em;
+}
+.greenabsolute .greenline{
+    position: absolute; left:85%; top:58%; font-size:0.8em;
+}
+
+.wrap{
+    word-break: keep-all;
+    letter-spacing: -.5px;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    vertical-align: baseline;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.cont1 .cont1gridbox .clearfix{
+    word-break: keep-all;
+    letter-spacing: -.5px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    vertical-align: baseline;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.cont1griditem{
+    word-break: keep-all;
+    letter-spacing: -.5px;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    vertical-align: baseline;
+    background-repeat: no-repeat;
+    float: left;
+    line-height: 1.5;
+    background-color: #707070;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 3px 20px;
+    box-sizing: border-box;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 48%;
+}
+
+.pctable{
+    width: 100%;
+    border: 1px solid #707070;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.pctable th, .pctable tr, .pctable td{
+    font-size: 14px;
+    padding: 10px 0;
+    border: 1px solid #707070;
+}
+.pctable th{
+    background-color: #B2A791;
+}
+
+.pctable > tbody > tr:nth-child(4) > td:nth-child(2)
+{
+    background-color: #FACD63;
+}
+.pctable > tbody > tr:nth-child(4) > td:nth-child(3)
+{
+    background-color: #FACD63;
+}
+.pctable > tbody > tr:nth-child(4) > td:nth-child(4)
+{
+    background-color: #B09DEF;
+}
+.no2{
+    background-color: rgb(150, 150, 150);
+    min-height: 200px;
+    
+}
+.no3{
+    background-color: white;
+    min-height: 200px;
+    
+}
+.no4{
+
+    background-color: white;
+    min-height: 200px;
+}
+
+.projectSample{
+    background-color: rgb(150, 150, 150);
+    min-height: 200px;
+}
+
+.form{
+    background-color: rgb(255, 255, 255);
+    min-height: 200px;
+}
+
+.form .table2 td,th{
+    padding: 20px 0;
+    border-top: 1px solid gray;
+}
+
+.form .table2{
+    border-top: 3px solid gray;
+    border-collapse: collapse;
+}
+
+
+footer{
+    background-color: rgb(15, 15, 15);
+    min-height: 200px;
+    width: 100%;
+}
+
+

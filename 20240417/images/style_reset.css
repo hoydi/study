@@ -1,0 +1,190 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0b1 | 201101
+   NOTE: WORK IN PROGRESS
+   USE WITH CAUTION AND TEST WITH ABANDON */
+
+*{letter-spacing: -.5px; }
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	/*background:transparent;*/
+	background-repeat:no-repeat;
+}
+@font-face {
+font-family: 'Noto Sans KR';
+font-style: normal;
+font-weight: 100;
+src: local('Noto Sans Thin'), local('NotoSans-Thin'),
+url(/assets/fonts/NotoSans-Thin.woff2) format('woff2'),
+url(/assets/fonts/NotoSans-Thin.woff) format('woff');
+}
+@font-face {
+font-family: 'Noto Sans KR';
+font-style: normal;
+font-weight: 300;
+src: local('Noto Sans Light'), local('NotoSans-Light'),
+url(/assets/fonts/NotoSans-Light.woff2) format('woff2'),
+url(/assets/fonts/NotoSans-Light.woff) format('woff');
+}
+@font-face {
+font-family: 'Noto Sans KR';
+font-style: normal;
+font-weight: 400;
+src: local('Noto Sans Regular'), local('NotoSans-Regular'),
+url(/assets/fonts/NotoSans-Regular.woff2) format('woff2'),
+url(/assets/fonts/NotoSans-Regular.woff) format('woff');
+}
+@font-face {
+font-family: 'Noto Sans KR';
+font-style: normal;
+font-weight: 500;
+src: local('Noto Sans Medium'), local('NotoSans-Medium'),
+url(/assets/fonts/NotoSans-Medium.woff2) format('woff2'),
+url(/assets/fonts/NotoSans-Medium.woff) format('woff');
+}
+@font-face {
+font-family: 'Noto Sans KR';
+font-style: normal;
+font-weight: 700;
+src: local('Noto Sans Bold'), local('NotoSans-Bold'),
+url(/assets/fonts/NotoSans-Bold.woff2) format('woff2'),
+url(/assets/fonts/NotoSans-Bold.woff) format('woff');
+}
+
+a{cursor: pointer; text-decoration: none; }
+button{cursor: pointer; }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+nav, ol, ul, li {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+input::placeholder {color: #aaa;}
+/* remember to define visible focus styles!
+:focus {
+	outline: ?????;
+} */
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.displayB{display: block !important; }
+.displayIB{display: inline-block !important; }
+.displayN{display: none !important; }
+.displayT{display: table !important; }
+
+textarea, input{font-family: "Noto Sans KR", sans-serif; letter-spacing: 0 !important; }
+textarea{resize: none; }
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {content: " ";display: table;}
+.clearfix:after {clear: both;display:block;content:'';}
+
+/**/
+.floatLeft{float:left !important;}
+.floatRight{float:right !important;}
+/*말 줄임 style - 2017.01.20 삽입*/
+.ellipsisStyle{white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.ellipsisLine2{ overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;/*  라인수 */-webkit-box-orient: vertical;word-wrap:break-word; }
+.ellipsisLine3{ overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;/*  라인수 */-webkit-box-orient: vertical;word-wrap:break-word; }
+
+/*htmlCode 작동하도록 pre 넣으면서 줄바꿈 잡아줌 2017.02.28 오종석*/
+pre {word-wrap: break-word;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-break:break-all;}
+
+/*  로딩처리  */
+.loadingText{color: #fff; font-size: 24px; line-height: 36px; position: absolute; width: 100%; top: 50%; text-align: center; }
+
+.lds-spinner {color: inherit;display: inline-block;position: absolute;width: 64px;height: 64px;top: 50%;left: 50%;margin-left: -32px;margin-top: -100px;}
+.lds-spinner div {transform-origin: 32px 32px;animation: lds-spinner 1.2s linear infinite;}
+.lds-spinner div:after {content: " ";display: block;position: absolute;top: 3px;left: 29px;width: 5px;height: 14px;border-radius: 20%;background: #fff;}
+.lds-spinner div:nth-child(1) {transform: rotate(0deg);animation-delay: -1.1s;}
+.lds-spinner div:nth-child(2) {transform: rotate(30deg);animation-delay: -1s;}
+.lds-spinner div:nth-child(3) {transform: rotate(60deg);animation-delay: -0.9s;}
+.lds-spinner div:nth-child(4) {transform: rotate(90deg);animation-delay: -0.8s;}
+.lds-spinner div:nth-child(5) {transform: rotate(120deg);animation-delay: -0.7s;}
+.lds-spinner div:nth-child(6) {transform: rotate(150deg);animation-delay: -0.6s;}
+.lds-spinner div:nth-child(7) {transform: rotate(180deg);animation-delay: -0.5s;}
+.lds-spinner div:nth-child(8) {transform: rotate(210deg);animation-delay: -0.4s;}
+.lds-spinner div:nth-child(9) {transform: rotate(240deg);animation-delay: -0.3s;}
+.lds-spinner div:nth-child(10) {transform: rotate(270deg);animation-delay: -0.2s;}
+.lds-spinner div:nth-child(11) {transform: rotate(300deg);animation-delay: -0.1s;}
+.lds-spinner div:nth-child(12) {transform: rotate(330deg);animation-delay: 0s;}
+@keyframes lds-spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*  로딩 처리 끝  */
+
+/*  새로운 게시물  */
+.newUp:after{content: 'N E W'; display: inline-block; width: 34px; height: 18px; line-height: 21px; background-color: transparent; color: #f33; text-align: center; font-size: 10px; font-weight: bold; border-radius: 3px; vertical-align: middle; margin-left: 5px; letter-spacing: -.5px; border: 1px solid #f33;
+	/*box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3); animation: blink 2s step-end infinite;
+ -webkit-animation: blink 2s step-end infinite;*/}
+@keyframes blink {
+ 0% {border: 1px solid #777; color: #777; }
+ 60% {border: 1px solid #fff; color: #e33; }
+}/*#f77*/
+
+/* for Chrome, Safari */
+@-webkit-keyframes blink {
+ 0% {border: 1px solid #777; color: #777; }
+ 60% {border: 1px solid #fff; color: #e33; }
+}
+
+/*  할인  */
+
+.pay_sale {width: 100%; margin: 50px 0; text-align: center;}
+.pay_sale > img {width: 95%;}
+
+@media all and (min-width:768px){
+
+
+}
+@media all and (min-width:1080px){
+	.pay_sale > img {width: 100%; max-width: 980px;}
+}
+
+/*jQuery modal 기능 관련*/
+.blocker {z-index: 19999 !important;}

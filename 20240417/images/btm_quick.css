@@ -1,0 +1,89 @@
+
+.fastinfo .policyBG {background: rgba(0,0,0,0.6); z-index: 100000;} 
+.fastinfo {width: 100%; margin: 30px 0;}
+.fastinfo h4 {text-align: center; margin-bottom: 20px; font-size: 25px; font-weight: bold;}
+.fastinfo .wrap {width: 100%; max-width: 90%; margin: 0 auto;}
+.fastinfo .wrap textarea {width: 96%; border: 1px solid #ccc;}
+
+.fastinfo .wrap > .name {display: flex; align-items: center; padding: 20px 0; border-top: 2px solid #0F4C81; border-bottom: 1px solid #ccc;}
+.fastinfo .wrap > .name >.left {width: 32%; text-align: center;}
+.fastinfo .wrap > .name .right {width: 100%;}
+.fastinfo .wrap input#btm_name {width: 200px; height: 29px; border: 1px solid #ccc; box-sizing: border-box;}
+
+.fastinfo .wrap > .phone {display: flex; align-items: center; padding: 20px 0; border-bottom: 1px solid #ccc;}
+.fastinfo .wrap > .phone >.left {width: 32%; text-align: center;}
+.fastinfo .wrap > .phone .right {width: 100%; display: flex; align-items: center;	gap: 3.2px;}
+.fastinfo .wrap input#btm_phone1 {width: 30%; height: 29px; border: 1px solid #ccc; box-sizing: border-box;}
+.fastinfo .wrap input#btm_phone2 {width: 30%; height: 29px; border: 1px solid #ccc; box-sizing: border-box;}
+.fastinfo .wrap input#btm_phone3 {width: 30%; height: 29px; border: 1px solid #ccc; box-sizing: border-box;}
+
+.fastinfo .wrap > .mail {display: flex; align-items: center; padding: 20px 0; border-bottom: 1px solid #ccc;}
+.fastinfo .wrap > .mail >.left {width: 32%; text-align: center;}
+.fastinfo .wrap > .mail >.right {width: 100%; display: flex; align-items: center;	gap: 3px;}
+.fastinfo .wrap input#btm_mail1 {width: 30%; height: 29px; border: 1px solid #ccc; box-sizing: border-box;}
+.fastinfo .wrap input#btm_mail2 {width: 30%; height: 29px; border: 1px solid #ccc; box-sizing: border-box; font-size: 12px;}
+.fastinfo .wrap select#btm_mail3 {width: 30%; height: 29px; border: 1px solid #ccc; box-sizing: border-box; font-size: 12px;}
+
+.fastinfo .wrap > .center {display: flex; align-items: center; padding: 20px 0; border-bottom: 1px solid #ccc;}
+.fastinfo .wrap > .center >.left {width: 32%; text-align: center;}
+.fastinfo .wrap > .center .right {width: 100%;}
+.fastinfo .wrap select#btm_cam_idx {width: 200px; height: 29px; border: 1px solid #ccc; box-sizing: border-box;}
+
+.fastinfo .wrap > .course {display: flex; align-items: center; padding: 20px 0; border-bottom: 1px solid #ccc;}
+.fastinfo .wrap > .course >.left {width: 30%; text-align: center;}
+.fastinfo .wrap > .course >.right {width: 70%;}
+
+.fastinfo .wrap > .write {display: flex; align-items: center; padding: 20px 0; border-bottom: 1px solid #ccc;}
+.fastinfo .wrap > .write >.left {width: 32%; text-align: center;}
+.fastinfo .wrap > .write >.right {width: 100%;}
+
+.fastinfo .wrap > .agreecheck {display: flex; justify-content: center; align-items: center; padding: 20px 0;}
+
+.fastinfo .wrap > .agreecheck > .checkleft > a {background-color: #0F4C81; color: #fff; border-radius: 3px; padding: 5px 10px; margin-right: 6px;}
+.fastinfo .wrap > .agreecheck > .checkright {display: flex;}
+.fastinfo .wrap > .agreecheck > .checkright > .rightbox{margin-left: 5px;}
+.fastinfo .wrap .askbtn {width: 100%; text-align: center; padding: 30px 0;}
+.fastinfo .wrap .askbtn > button {width: 150px; height: 45px; cursor: pointer; border-radius: 5px; background-color: #0F4C81; color: #fff; border: 1px solid #0F4C81; font-size: 18px; font-weight: bold;}
+.fastinfo .wrap .askbtn > button:hover {background-color: #032f55;}
+
+
+@media all and (min-width:480px) {
+	.fastinfo .wrap > .name >.left {width: 30%;}
+	.fastinfo .wrap > .phone >.left {width: 30%;}
+	.fastinfo .wrap > .write >.left {width: 30%;}
+	.fastinfo .wrap > .mail >.left {width: 30%;}
+	.fastinfo .wrap > .center >.left {width: 30%;}
+	.fastinfo .wrap .agreecheck >.leftbox {width: 5%;}
+	.fastinfo .wrap > .agreecheck > .checkleft > a { margin-right: 15px;}
+}
+@media all and (min-width:540px) {
+	.fastinfo .wrap textarea {width: 93.7%;}
+}
+@media all and (min-width:640px) {
+	.fastinfo .wrap input#btm_mail1,
+	.fastinfo .wrap input#btm_mail2,
+	.fastinfo .wrap select#btm_mail3{font-size: 14px;}
+}
+@media all and (min-width:768px) {
+.fastinfo .wrap > .phone >.left {width: 30%;}
+.fastinfo .wrap > .write >.left {width: 30%; text-align: center;}
+.fastinfo .wrap > .mail >.left {width: 30%;}
+/* .fastinfo .wrap {width: 100%; max-width: 1080px; margin: 0 auto;} */
+.fastinfo .wrap .agreecheck >.leftbox {width: 2%;}
+
+.fastinfo .wrap input#btm_phone1{width: 150px;}
+.fastinfo .wrap input#btm_phone2{width: 150px;}
+.fastinfo .wrap input#btm_phone3{width: 150px;}
+
+.fastinfo .wrap input#btm_mail1 {width: 150px;}
+.fastinfo .wrap input#btm_mail2 {width: 150px;}
+.fastinfo .wrap select#btm_mail3 {width: 150px;}
+.fastinfo .wrap textarea {width: 96.7%;}
+
+}
+@media all and (min-width:1080px) {
+	.fastinfo .wrap textarea {width: 97.7%;}
+}
+@media all and (min-width:1200px) {
+	.fastinfo .wrap {width: 100%; max-width: 1080px; margin: 0 auto;}
+}
